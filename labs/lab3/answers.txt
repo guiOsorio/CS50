@@ -1,0 +1,24 @@
+sort1 uses: Bubble sort
+sorted (best case) - 0m2.999s
+random (avg case) - 0m15.558s
+reversed (worst case) - 0m13.253s
+
+How do you know?:
+Bubble sort time complexity - best case === n; avg case === n2 ; worst case === n2;
+
+sort2 uses: Merge sort
+sorted (best case) - 0m5.028s
+random (avg case) - 0m4.036s
+reversed (worst case) - 0m3.343s
+
+How do you know?:
+Merge sort time complexity - igual best/avg/worst case scenarios === O(n*logn)
+
+sort3 uses: Selection sort
+sorted (best case) - 0m7.854s
+random (avg case) - 0m7.436s
+reversed (worst case) - 0m7.559s
+
+
+How do you know?:
+Selection sort time complexity - best case === n2 ; avg case === n2 ; worst case === n2;

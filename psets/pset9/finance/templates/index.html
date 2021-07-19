@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Finance
+{% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+            <tr>
+                <th>Stock</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Value</th>
+                <th>Cash</th>
+                <th>Account value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in range(user_rows_length) %}
+                <tr>
+                    <td>{{ user_rows[i]["symbol"] }}</td>
+                    <td>{{ user_rows[i]["shares"] }}</td>
+                    <td>{{ user_rows[i]["price"] }}</td>
+                    <td>{{ user_rows[i]["value"] }}</td>
+                    <td> - </td>
+                    <td> - </td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td> - </td>
+                <td> - </td>
+                <td> - </td>
+                <td> - </td>
+                <td><strong>{{ cash }}</strong></td>
+                <td><strong>{{ account_value }}</strong></td>
+            </tr>
+        </tbody>
+    </table>
+    <h4>{{ uprows }}</h4>
+{% endblock %}
